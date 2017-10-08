@@ -1,94 +1,117 @@
 # USAR TAGS EN GIT
 
-## Ver commits
-```
-git log --oneline
-```
+ ## Ver commits
+ ```
+ git log --oneline
+ ```
 
-#Relación entre commits
-git log --oneline --graph
+ ## Relación entre commits
+ ```
+ git log --oneline --graph
+ ```
 
-#Ver el commit actual y que se tiene en el directorio de trabajo
-git log --oneline --graph --decorate
+ ## Ver el commit actual y que se tiene en el directorio de trabajo
+ ```
+ git log --oneline --graph --decorate
+ ```
+ ## Crear Modificar y Eliminar Branchs
 
-#Crear Modificar y Eliminar Branchs
+ ## Ver ramas creadas
+ ```
+ git branch
+ ```
 
-#Ver ramas creadas}
-git branch
+ ## Crear ramas
+ ```
+ git branch feature-newbranch
+ ```
 
-#Crear ramas
-git branch feature-newbranch
+ ## Cambiar a rama
+ ```
+ git checkout feature-newbranch
+ ```
 
-#Cambiar a rama
-git checkout feature-newbranch
+ ## Crear y cambiar a rama
+ ```
+ git checkout -b feature-newbranchpage 
+ ```
+ ## Volver a master 
+ ```
+ git checkout master 
+ ```
 
-#Crear y cambiar a rama
-git checkout -b feature-newbranchpage 
+ ## Cambiar nombre de rama
+ ```
+ git branch -m feature-newbranch feature-newhome
+ ```
+ ## Eliminar una rama
+ ```
+ git branch -d feature-newhome
+ ```
+ ## COMMITS BAJO EL CONTROL DE WORKFLOW FEATURE BRANCH
+ ```
+ git checkout feature-newstyle
+ git  add .
+ git commit -m "retoque"
+ git log --online --decorate 
+ git checkout master 
+ git checkout -b fix-fecha
+ git log --online --decorate --all
+ git log --online --decorate --all --graph
+ ```
+ ## GESTION DE VERSIONES DE CÓDIGO DE UN PROYECTO
+ ```
+ git tag v0.2.0
+ git lod
+ ```
+ ## Tag a un commit en específico
+ ```
+ git tag v0.1.0 3456h53f
+ ```
+ # Hacer un checkout a un tag
+ ```
+ git checkout v0.1.0
+ git lod
+ git checkout -b fix-0.1.1
+ git checkout master
+ ```
+ ## Listar todos los tags
+ ```
+ git tag 
+ ```
+ ## Eliminar tags
+ ```
+ git tag -d v0.1.1
+ ```
+ ## TAGS ANOTADOS
+ ```
+ git tag -l
+ git tag -l "v01.1*"
+ git tag -l  "v01.0*"
+ ```
 
-#Volver a master 
-git checkout master 
+ ## Eliminar tag determinados
+ ```
+ git tag -l "v2"
+ git tag -d v02.1.0
+ ```
+ ## Creando tags anotados
+ ```
+ git tag -a v01.2.1
+ git tag
+ git show v0.1.0
+ 
+ autor
+ fecha
+ mensaje
+ fecha commit
+ autor commit
+ historial
+ ```
+ ```
+ git show master
+ git show 35435jnh5
 
-#Cambiar nombre de rama
-git branch -m feature-newbranch feature-newhome
-
-#Eliminar una rama
-git branch -d feature-newhome
-
-#COMMITS BAJO EL CONTROL DE WORKFLOW FEATURE BRANCH
-
-git checkout feature-newstyle
-git  add .
-git commit -m "retoque"
-git log --online --decorate 
-git checkout master 
-git checkout -b fix-fecha
-git log --online --decorate --all
-git log --online --decorate --all --graph
-
-#GESTION DE VERSIONES DE CÓDIGO DE UN PROYECTO
-git tag v0.2.0
-git lod
-
-#Tag a un commit en específico
-git tag v0.1.0 3456h53f
-
-#Hacer un checkout a un tag
-git checkout v0.1.0
-git lod
-git checkout -b fix-0.1.1
-git checkout master
-
-#Listar todos los tags
-git tag 
-
-#Eliminar tags
-git tag -d v0.1.1
-
-#TAGS ANOTADOS
-git tag -l
-git tag -l "v01.1*"
-git tag -l  "v01.0*"
-
-
-#Eliminar tag determinados
-git tag -l "v2"
-git tag -d v02.1.0
-
-#Creando tags anotados
-git tag -a v01.2.1
-git tag
-git show v0.1.0
-
-autor
-fecha
-mensaje
-fecha commit
-autor commit
-historial
-
-git show master
-git show 35435jnh5
-
-git show v21.3.6
-
+ git show v21.3.6
+ ```
 

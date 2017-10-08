@@ -1,7 +1,9 @@
-#USAR TAGS EN GIT
+# USAR TAGS EN GIT
 
-#Ver commits
+## Ver commits
+```
 git log --oneline
+```
 
 #Relación entre commits
 git log --oneline --graph

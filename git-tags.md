@@ -1,53 +1,5 @@
 # USAR TAGS EN GIT
 
- ## Ver commits
- ```
- git log --oneline
- ```
-
- ## Relación entre commits
- ```
- git log --oneline --graph
- ```
-
- ## Ver el commit actual y que se tiene en el directorio de trabajo
- ```
- git log --oneline --graph --decorate
- ```
- ## Crear Modificar y Eliminar Branchs
-
- ## Ver ramas creadas
- ```
- git branch
- ```
-
- ## Crear ramas
- ```
- git branch feature-newbranch
- ```
-
- ## Cambiar a rama
- ```
- git checkout feature-newbranch
- ```
-
- ## Crear y cambiar a rama
- ```
- git checkout -b feature-newbranchpage 
- ```
- ## Volver a master 
- ```
- git checkout master 
- ```
-
- ## Cambiar nombre de rama
- ```
- git branch -m feature-newbranch feature-newhome
- ```
- ## Eliminar una rama
- ```
- git branch -d feature-newhome
- ```
  ## COMMITS BAJO EL CONTROL DE WORKFLOW FEATURE BRANCH
  ```
  git checkout feature-newstyle
@@ -62,7 +14,7 @@
  ## GESTION DE VERSIONES DE CÓDIGO DE UN PROYECTO
  ```
  git tag v0.2.0
- git lod
+ git log --online --decorate 
  ```
  ## Tag a un commit en específico
  ```
@@ -83,7 +35,7 @@
  ```
  git tag -d v0.1.1
  ```
- ## TAGS ANOTADOS
+ ## Mostrar tags anotados
  ```
  git tag -l
  git tag -l "v01.1*"
